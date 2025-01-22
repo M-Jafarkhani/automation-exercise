@@ -74,7 +74,7 @@ jobs:
       - name: Download coverage artifact
         uses: actions/download-artifact@v3
         with:
-          name: coverage-file
+          name: coverage-report
           path: .
 
       - name: Generate coverage report and XML
