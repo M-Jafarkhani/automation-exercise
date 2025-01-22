@@ -76,7 +76,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: coverage-report
-          include-hidden-files: true
 
       - name: Generate coverage report and XML
         run: |
@@ -87,6 +86,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: coverage-xml
-          include-hidden-files: true
-          path: .
+          path: coverage.xml
           retention-days: 14  
